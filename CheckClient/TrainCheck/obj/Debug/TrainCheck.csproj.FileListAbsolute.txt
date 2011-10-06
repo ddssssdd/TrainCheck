@@ -1,0 +1,13 @@
+D:\programs\TrainCheck\TrainCheck\TrainCheck\bin\Debug\dbtraincheck.sdf
+D:\programs\TrainCheck\TrainCheck\TrainCheck\bin\Debug\TrainCheck.exe
+D:\programs\TrainCheck\TrainCheck\TrainCheck\bin\Debug\TrainCheck.pdb
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\ResolveAssemblyReference.cache
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.FormDataQuery.resources
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.FormMain.resources
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.Properties.Resources.resources
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.csproj.GenerateResource.Cache
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.exe
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.pdb
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.FormLogin.resources
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.FormCheck.resources
+D:\programs\TrainCheck\TrainCheck\TrainCheck\obj\Debug\TrainCheck.FormJobMainView.resources

@@ -1,0 +1,3 @@
+﻿<Asp:Button runat="server" CssClass="button"></Asp:Button>
+<Asp:TextBox runat="server" CssClass="textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_username" CssClass="txt_username textbox"></Asp:TextBox>

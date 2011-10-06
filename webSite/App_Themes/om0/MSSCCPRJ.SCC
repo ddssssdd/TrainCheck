@@ -1,0 +1,18 @@
+SCC = This is a Source Code Control file.
+
+[OrionMobility.sln]
+SCC_Aux_Path = 10.4.30.2:8877:Source2005
+SCC_Project_Name = $/SC5.2/OrionMobility
+
+[Orion.Business.csproj]
+SCC_Aux_Path = dev1:8877:Source2005
+SCC_Project_Name = $/SC5.2/OrionMobility/Orion.Business
+
+[Orion.Stauth.vbproj]
+SCC_Aux_Path = dev1:8877:Source2005
+SCC_Project_Name = $/SC5.2/OrionMobility/Orion.Stauth
+
+[Orion.WebBase.csproj]
+SCC_Aux_Path = dev1:8877:Source2005
+SCC_Project_Name = $/SC5.2/OrionMobility/Orion.WebBase
+

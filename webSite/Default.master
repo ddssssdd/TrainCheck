@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="js/lhgcore.min.js"></script>
+    <script type="text/javascript" src="js/lhgcalendar.min.js"></script>
+    <link href="css/lhgcalendar.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="top">
+        <div id="top_left">
+            <div id="top1">
+            </div>
+            <div id="top2">
+                <div id="top2_1">
+                </div>
+                <div id="top2_2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainmenu">
+        <div id="menu">
+            <div id="menu" class="menu">
+                <ul>
+                    <li id='hot'>
+                        <asp:LinkButton ID="LinkButton1" runat="server" Text="主页" PostBackUrl="~/DefaultAnaArea.aspx"></asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton2" runat="server" Text="接触网" PostBackUrl="~/Jobs/JobSearch3.aspx"></asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton3" runat="server" Text="牵引变" PostBackUrl="~/Jobs/JobSearch4.aspx?type=2"></asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" Text="编码管理" PostBackUrl="~/Specs/DictSpecsSearch.aspx"></asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton5" runat="server" Text="用户管理" PostBackUrl="~/Users/UsersSearch.aspx"></asp:LinkButton>
+                    </li>
+                    <li>
+                         <asp:LinkButton ID="LinkButton6" runat="server" Text="系统管理" PostBackUrl="~/Users/dictArea.aspx"></asp:LinkButton>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="height:60px">
+        </div>
+    <div id="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="bottom">
+        <div id="bottom1">
+            CopyRight Information.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

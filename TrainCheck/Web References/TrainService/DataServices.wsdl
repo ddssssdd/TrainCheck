@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UserList">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SpecsList">
+        <s:complexType />
+      </s:element>
+      <s:element name="SpecsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SpecsListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SpecsItemsList">
+        <s:complexType />
+      </s:element>
+      <s:element name="SpecsItemsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SpecsItemsListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Settings">
+        <s:complexType />
+      </s:element>
+      <s:element name="SettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SettingsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadJob">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobdate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="begintime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endtime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipaddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="needcheckposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="passposition" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="childList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isFull" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadJobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadJobResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSpecsBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSpecsBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadSpecsBarCodeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UserListSoapIn">
+    <wsdl:part name="parameters" element="tns:UserList" />
+  </wsdl:message>
+  <wsdl:message name="UserListSoapOut">
+    <wsdl:part name="parameters" element="tns:UserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SpecsListSoapIn">
+    <wsdl:part name="parameters" element="tns:SpecsList" />
+  </wsdl:message>
+  <wsdl:message name="SpecsListSoapOut">
+    <wsdl:part name="parameters" element="tns:SpecsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SpecsItemsListSoapIn">
+    <wsdl:part name="parameters" element="tns:SpecsItemsList" />
+  </wsdl:message>
+  <wsdl:message name="SpecsItemsListSoapOut">
+    <wsdl:part name="parameters" element="tns:SpecsItemsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:Settings" />
+  </wsdl:message>
+  <wsdl:message name="SettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:SettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadJobSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadJob" />
+  </wsdl:message>
+  <wsdl:message name="UploadJobSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadSpecsBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadSpecsBarCode" />
+  </wsdl:message>
+  <wsdl:message name="UploadSpecsBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadSpecsBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DataServicesSoap">
+    <wsdl:operation name="UserList">
+      <wsdl:input message="tns:UserListSoapIn" />
+      <wsdl:output message="tns:UserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecsList">
+      <wsdl:input message="tns:SpecsListSoapIn" />
+      <wsdl:output message="tns:SpecsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecsItemsList">
+      <wsdl:input message="tns:SpecsItemsListSoapIn" />
+      <wsdl:output message="tns:SpecsItemsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Settings">
+      <wsdl:input message="tns:SettingsSoapIn" />
+      <wsdl:output message="tns:SettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadJob">
+      <wsdl:input message="tns:UploadJobSoapIn" />
+      <wsdl:output message="tns:UploadJobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSpecsBarCode">
+      <wsdl:input message="tns:UploadSpecsBarCodeSoapIn" />
+      <wsdl:output message="tns:UploadSpecsBarCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataServicesSoap" type="tns:DataServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserList">
+      <soap:operation soapAction="http://tempuri.org/UserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecsList">
+      <soap:operation soapAction="http://tempuri.org/SpecsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecsItemsList">
+      <soap:operation soapAction="http://tempuri.org/SpecsItemsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Settings">
+      <soap:operation soapAction="http://tempuri.org/Settings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadJob">
+      <soap:operation soapAction="http://tempuri.org/UploadJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSpecsBarCode">
+      <soap:operation soapAction="http://tempuri.org/UploadSpecsBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataServicesSoap12" type="tns:DataServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserList">
+      <soap12:operation soapAction="http://tempuri.org/UserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecsList">
+      <soap12:operation soapAction="http://tempuri.org/SpecsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecsItemsList">
+      <soap12:operation soapAction="http://tempuri.org/SpecsItemsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Settings">
+      <soap12:operation soapAction="http://tempuri.org/Settings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadJob">
+      <soap12:operation soapAction="http://tempuri.org/UploadJob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSpecsBarCode">
+      <soap12:operation soapAction="http://tempuri.org/UploadSpecsBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataServices">
+    <wsdl:port name="DataServicesSoap" binding="tns:DataServicesSoap">
+      <soap:address location="http://192.168.0.104/TrainCheck/DataServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataServicesSoap12" binding="tns:DataServicesSoap12">
+      <soap12:address location="http://192.168.0.104/TrainCheck/DataServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

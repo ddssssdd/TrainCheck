@@ -1,0 +1,60 @@
+﻿/* Login Entry */
+.logintable td
+{
+    font-weight: bold;
+    text-align: left;
+    line-height: 150%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.loginbtntd
+{
+    text-align: right !important;
+    padding-right: 8px;
+}
+.captiontd
+{
+    text-align: center !important;
+}
+.loginbox
+{
+    border: solid 1px black;
+    padding: 16px;
+    margin: 0 auto;
+    width: 250px;
+    background-color: #D6D3EE;
+}
+/* Button */
+.button
+{
+    background: url(../../images/gridselect.gif) repeat-x;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: #000000;
+    border: 1px solid #3B316E;
+    cursor: pointer;
+    cursor: hand;
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    width: 70px;
+}
+/* TextBox */
+.textbox
+{
+    height: 18px;
+    border: 1px solid #CCCCCC;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../../images/bg-input.gif');
+    background-repeat: repeat-x;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+    padding: 1px;
+}
+.txt_username
+{
+    ime-mode: disabled;
+}

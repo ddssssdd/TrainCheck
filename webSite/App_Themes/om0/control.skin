@@ -1,0 +1,168 @@
+﻿<%@ Register Assembly="AspNetPager" Namespace="Wuqi.Webdiyer" TagPrefix="webdiyer" %>
+
+<Asp:GridView runat="server" CssClass="grid"  CellSpacing="0" GridLines="None" Width="100%" >
+    <HeaderStyle CssClass="gridheader" Height="21px"/>
+    <RowStyle CssClass="gridrow"  HorizontalAlign="Left" Height="20px"/>
+    <AlternatingRowStyle CssClass="gridrow" Height="20px"/>
+    <EditRowStyle CssClass="grideditrow" Height="20px" />
+    <SelectedRowStyle  CssClass="gridselrow" Height="20px" />
+    <FooterStyle CssClass="gridfootrow" Height="22px"/>
+    <PagerStyle CssClass="gridpagerrow" Height="22px"/>
+    <PagerSettings FirstPageText="First" LastPageText="Last" 
+            Mode="NumericFirstLast" NextPageText="Next" PreviousPageText="Prev" PageButtonCount="10" />
+     <EmptyDataRowStyle CssClass="gridemptyrow" />
+</Asp:GridView>
+
+
+<Asp:GridView runat="server" CssClass="grid"  CellSpacing="0" GridLines="None" SkinID="nowidth">
+    <HeaderStyle CssClass="gridheader" Height="21px"/>
+    <RowStyle CssClass="gridrow"  HorizontalAlign="Left" Height="20px"/>
+    <AlternatingRowStyle CssClass="gridrow" Height="20px"/>
+    <EditRowStyle CssClass="grideditrow" Height="20px" />
+    <SelectedRowStyle  CssClass="gridselrow" Height="20px" />
+    <FooterStyle CssClass="gridfootrow" Height="22px"/>
+    <PagerStyle CssClass="gridpagerrow" Height="22px"/>
+    <PagerSettings FirstPageText="First" LastPageText="Last" 
+            Mode="NumericFirstLast" NextPageText="Next" PreviousPageText="Prev" PageButtonCount="10" />
+     <EmptyDataRowStyle CssClass="gridemptyrow" />
+</Asp:GridView>
+
+<Asp:GridView runat="server" SkinID="grid_task_weekview" CellSpacing="0" GridLines="None" Width="100%" >
+    <RowStyle CssClass="gridrow_weekview"  HorizontalAlign="Left" Height="20px"/>
+     <EmptyDataRowStyle CssClass="gridemptyrow_weekview" />
+</Asp:GridView>
+
+
+<%-- Pager  ( | 每页条数: %PageSize%) --%>
+<webdiyer:AspNetPager runat="server" CssClass="gvpager" PageIndexBoxClass="gvpager" CustomInfoClass="gvpager_custominfo"
+    FirstPageText="第一页" LastPageText="最后一页" NextPageText="后页" PrevPageText="前页"
+    CustomInfoHTML="共计: %RecordCount%" 
+    CustomInfoSectionWidth="100px" CustomInfoTextAlign="Left" ShowCustomInfoSection="Left" 
+    PageIndexBoxType="DropDownList" TextBeforePageIndexBox=" 前往: " 
+    ShowPageIndexBox="Always" AlwaysShow="true" NumericButtonCount="5">
+</webdiyer:AspNetPager>
+<webdiyer:AspNetPager runat="server" CssClass="gvpager" PageIndexBoxClass="gvpager" SkinID="pager2"
+    PageIndexBoxType="DropDownList" TextBeforePageIndexBox=" <br />Go to Page: " 
+    ShowPageIndexBox="Always" AlwaysShow="true" NumericButtonCount="5">
+</webdiyer:AspNetPager>
+<webdiyer:AspNetPager runat="server" CssClass="gvpager" PageIndexBoxClass="gvpager" SkinID="pager3"
+    CustomInfoHTML="Total: %RecordCount%" 
+    CustomInfoSectionWidth="100px" CustomInfoTextAlign="Left" ShowCustomInfoSection="Left" 
+    PageIndexBoxType="DropDownList" TextBeforePageIndexBox="Go to: " 
+    ShowPageIndexBox="Always" AlwaysShow="true" NumericButtonCount="5">
+</webdiyer:AspNetPager>
+<webdiyer:AspNetPager runat="server" CssClass="gvpager2" PageIndexBoxClass="gvpager2" SkinID="pager4"
+    CustomInfoHTML="Total: %RecordCount%" 
+    CustomInfoSectionWidth="100px" CustomInfoTextAlign="Left" ShowCustomInfoSection="Never" 
+    PageIndexBoxType="DropDownList" TextBeforePageIndexBox="Go to: " 
+    ShowPageIndexBox="Never" AlwaysShow="true" NumericButtonCount="1">
+</webdiyer:AspNetPager>
+<webdiyer:AspNetPager runat="server" CssClass="gvpager2" PageIndexBoxClass="gvpager2" SkinID="pager5"
+    CustomInfoHTML="Total: %RecordCount%" 
+    CustomInfoSectionWidth="100px" CustomInfoTextAlign="Left" ShowCustomInfoSection="Never" 
+    PageIndexBoxType="DropDownList" TextBeforePageIndexBox="Go to: " 
+    ShowPageIndexBox="Never" AlwaysShow="true" NumericButtonCount="4">
+</webdiyer:AspNetPager>
+
+
+
+
+<Asp:TextBox runat="server" CssClass="textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="textarea" CssClass="textarea"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="htmltextarea" CssClass="htmltextarea"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_dateselect" CssClass="txt_dateselect textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_number" CssClass="txt_number textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_int" CssClass="txt_int textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_currency" CssClass="txt_currency textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_float" CssClass="txt_float textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_colorselect" CssClass="txt_colorselect textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_phone" CssClass="txt_phone textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_email" CssClass="txt_email textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_ip" CssClass="txt_ip textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="txt_username" CssClass="txt_username textbox"></Asp:TextBox>
+<Asp:TextBox runat="server" SkinID="quicksearchtext" CssClass="quicksearchtext"></Asp:TextBox>
+
+
+
+<Asp:FileUpload runat="server" CssClass="fileupload"></Asp:FileUpload>
+
+
+<Asp:ListBox runat="server" CssClass="listbox"></Asp:ListBox>
+
+
+
+<Asp:Button runat="server" CssClass="button"></Asp:Button>
+<Asp:Button runat="server" SkinID="btnshort" CssClass="button btnshort"></Asp:Button>
+<Asp:Button runat="server" SkinID="btnlong" CssClass="button btnlong"></Asp:Button>
+
+
+<Asp:LinkButton runat="server" CssClass="linkbutton"></Asp:LinkButton>
+<Asp:LinkButton runat="server" SkinID="field_link" CssClass="field_link"></Asp:LinkButton>
+<Asp:LinkButton runat="server" SkinID="field_tasktitle" CssClass="field_tasktitle"></Asp:LinkButton>
+
+
+<Asp:HyperLink runat="server" SkinID="field_link" CssClass="field_link"></Asp:HyperLink>
+
+
+
+<Asp:Label runat="server" CssClass="field_grid"></Asp:Label>
+<Asp:Label SkinID="req" runat="server" ForeColor="Red"></Asp:Label>
+<Asp:Label SkinID="field_title" CssClass="field_title" runat="server" ></Asp:Label>
+<Asp:Label SkinID="field_title_small" CssClass="field_title_small" runat="server" ></Asp:Label>
+<Asp:Label SkinID="field_value" CssClass="field_value" runat="server"></Asp:Label>
+<Asp:Label SkinID="field_grid" CssClass="field_grid" runat="server"></Asp:Label>
+<Asp:Label SkinID="field_largetext" CssClass="field_largetext" runat="server"></Asp:Label>
+<Asp:Label SkinID="field_gridbold" CssClass="field_gridbold" runat="server"></Asp:Label>
+<Asp:Label SkinID="section_header" CssClass="section_header" runat="server"></Asp:Label>
+<Asp:Label SkinID="section_title" CssClass="section_title" runat="server"></Asp:Label>
+<Asp:Label SkinID="field_title_quicksearch" CssClass="field_title_quicksearch" runat="server"></Asp:Label>
+<Asp:Label SkinID="TaxPolicyDataField" CssClass="TaxPolicyDataField" runat="server"></Asp:Label>
+<Asp:Label SkinID="TaxPolicyFieldLabel" CssClass="TaxPolicyFieldLabel" runat="server"></Asp:Label>
+
+
+
+
+<Asp:DropDownList runat="server" CssClass="select"></Asp:DropDownList>
+<Asp:DropDownList SkinID="dropdownquicksearch" runat="server" CssClass="selectquicksearch"></Asp:DropDownList>
+
+
+
+<%-- OTreeView --%>
+<Asp:TreeView runat="server">
+    <LeafNodeStyle CssClass="leafnode" />
+    <RootNodeStyle CssClass="rootnode" />
+</Asp:TreeView>
+
+<Asp:Panel SkinID="treeviewpanel" runat="server" scrollbars="Vertical" CssClass="treeviewpanel"></Asp:Panel>
+<Asp:Panel SkinID="editarea" runat="server" CssClass="editarea"></Asp:Panel>
+<Asp:Panel SkinID="searcharea" runat="server" CssClass="searcharea"></Asp:Panel>
+<Asp:Panel SkinID="buttonarea" runat="server" CssClass="buttonarea"></Asp:Panel>
+<Asp:Panel SkinID="floatingarea" runat="server" CssClass="floatingarea"></Asp:Panel>
+<Asp:Panel SkinID="oajaxloading" runat="server" CssClass="loadstatus loadstatus_1"></Asp:Panel>
+
+
+
+
+
+
+<%-- Calendar --%>
+<Asp:Calendar runat="server" CssClass="calendar"></Asp:Calendar>
+<Asp:Calendar runat="server" CssClass="calendartasks" SkinID="Task" 
+ShowDayHeader="False" TitleStyle-BackColor="#fff8c9"
+BorderWidth="1px" BorderStyle="solid" BorderColor="#bbbbbb" BackColor="White"  Height="175px" width="100%" Font-Size="12px" 
+FirstDayOfWeek="Sunday" DayNameFormat="Shortest" Font-Names="Arial">
+<SelectedDayStyle BackColor="#777777" Font-Bold="True" />
+<SelectorStyle BackColor="#772222" />
+<TodayDayStyle ForeColor="black" font-Bold="True" BorderStyle ="Solid" BorderWidth ="1" BorderColor ="Blue"   />
+<OtherMonthDayStyle ForeColor="#CC9966" />
+<NextPrevStyle Font-Size="9pt" ForeColor="#bbbbbb" />
+<DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="4px" />
+<TitleStyle BackColor="#fff8c9" Font-Bold="true" Font-Size="11px" Font-Names="Arial"
+    ForeColor="#000000" height="12px"/>
+    </Asp:Calendar>
+    
+
+
+<%-- Validation --%>
+<asp:ValidationSummary runat="server" HeaderText="Please enter the following mandatory field(s)" ShowMessageBox="True" ShowSummary="False" />
+<asp:RequiredFieldValidator runat="server"></asp:RequiredFieldValidator>

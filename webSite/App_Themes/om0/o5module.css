@@ -1,0 +1,423 @@
+﻿/* Address Usercontrol */
+.addrtypetitle
+{
+	margin-top: 8px;
+	margin-bottom: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #eeeeee;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #bbbbbb;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.addrtypecontent
+{
+	padding: 3px;
+}
+/* Cost Projection */
+.cpgroupname
+{
+	font-weight: bold;
+	font-size: 13px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #999999; /*#A097CE;*/
+	padding-bottom: 1px;
+	padding-top: 2px;
+	padding-left: 5px;
+	margin-bottom: 3px;
+}
+.cppolicyinfo
+{
+	padding: 3px;
+	margin-bottom: 3px;
+	line-height: 150%;
+	border: solid 1px #bbbbbb;
+	background-color: #F5F5F5;
+}
+.cpddlcostadd
+{
+	width: 200px;
+}
+.cpddlcostadd optgroup
+{
+	color: blue;
+}
+.cpddlcostadd option
+{
+	color: Black;
+}
+.cpaddnewcostinfo
+{
+	padding: 6px;
+	margin-top: 3px;
+	line-height: 150%;
+	border: solid 1px #bbbbbb;
+	background-color: #F5F5F5;
+}
+
+/* Authorization */
+.au_tdheight td
+{
+	height: 20px;
+}
+
+/* Assignment */
+.as_candidateinfo
+{
+	padding: 3px;
+	margin-bottom: 3px;
+	line-height: 150%;
+	border: solid 1px #aaaaaa;
+}
+.as_candidateinfo_summ
+{
+	padding: 3px;
+	margin-bottom: 1px;
+	line-height: 150%;
+	border: solid 1px #bbbbbb;
+	background-color: #F5F5F5;
+	color: #333333;
+}
+.as_candidateinfo_button
+{
+	padding: 3px;
+}
+
+/* Relocatee Budget */
+.rb_floatingdiv
+{
+	width: 250px;
+	height: 100px;
+	background-color: #eee;
+	position: absolute;
+	border: solid 1px #dddddd;
+}
+.rb_celldiv
+{
+	background-color: #82C0FF;
+}
+.rb_div_homevalue
+{
+	text-align: right;
+	padding-right: 10px;
+}
+.rb_div_hometotal
+{
+	text-align: right;
+	padding-right: 10px;
+}
+.rb_div_homevalue_read
+{
+	text-align: right;
+	padding-right: 10px;
+}
+.rb_div_hometotal_read
+{
+	text-align: right;
+	padding-right: 10px;
+}
+/* Tasks */
+.taskhighPriority
+{
+	font-size: small;
+	font-weight: bold;
+	color: Red;
+}
+.tasklowPriority
+{
+	font-size: small;
+	font-weight: bold;
+	color: blue;
+}
+
+/* ACL */
+.acl_menunode
+{
+	background-color: #FFCC00;
+}
+.acl_moduleselectednode
+{
+	background-color: #82C0FF;
+}
+
+/* Expense */
+.expense_bordertable
+{
+	border: 1px solid #888888;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+.expense_tbtitle
+{
+	font-weight: bold;
+	background: url(../../images/gridtitlebg.gif);
+	background-repeat: repeat-x;
+	border-bottom: solid 1px #888888;
+	padding: 4px 4px 4px 10px;
+	font-size: 10px;
+	cursor: hand;
+}
+.expense_total
+{
+	border: 1px solid #bbbbbb;
+	background-color: #fff8c9;
+	padding: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	vertical-align: top;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+/* Expense Entry Tab */
+#ex_subtab
+{
+	float: left;
+	width: 100px;
+}
+#ex_subtab ul
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 0;
+	margin: 0;
+}
+#ex_subtab li
+{
+	width: 100px;
+	height: 21px;
+	background-color: #eeeeee;
+	margin-bottom: 2px;
+	list-style: none;
+}
+#ex_subtab li span
+{
+	width: 100px;
+	line-height: 20px;
+	display: block;
+	text-align: center;
+	cursor: hand;
+}
+.ex_subtab_selectedbtn
+{
+	background-color: #dddddd;
+	border-top: solid 1px #999999 !important;
+	border-left: solid 1px #999999 !important;
+	border-right: none !important;
+	border-bottom: solid 2px #999999 !important;
+	z-index: 9999;
+	font-weight: bold !important;
+}
+#ex_subtabcontent
+{
+	float: left;
+	width: 592px;
+	border: solid 1px #999999;
+	text-align: left;
+	padding: 3px;
+	background-color: #dddddd;
+	border-bottom: solid 2px #999999;
+	border-right: solid 2px #999999;
+}
+.ex_subtabcontent_hide
+{
+	/*display: none;*/
+}
+
+/* Find Person in Add New Transferee*/
+.transfereequickpnl
+{
+	clear: both;
+	margin: 0 0 0 0;
+	width: 450px;
+	height: 400px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 500;
+	position: absolute;
+	background-color: #fff8c9;
+}
+.transfereequick_iframe
+{
+	margin: 0 0 0 0;
+	width: 450px;
+	height: 400px;
+	text-align: center;
+	padding: 0;
+	border: solid 1px red;
+	z-index: 499;
+	position: absolute;
+	background-color: #fff8c9;
+}
+
+.TransfereeAddConfirmpnl
+{
+	clear: both;
+	margin: 0 0 0 130px;
+	width: 450px;
+	height: 200px;
+	text-align: center;
+	padding: 10;
+	border: solid 4px #eeeeee;
+	z-index: 700;
+	position: absolute;
+	background-color: #fff8c9;	 
+    top:400px;
+}
+
+.TransfereeAddConfirm_iframe
+{
+	margin: 0 0 0 130px;
+	width: 450px;
+	height: 200px;
+	text-align: center;
+	padding: 10;
+	border: solid 1px red;
+	z-index: 699;
+	position: absolute;
+	background-color: #fff8c9;
+	top:400px;
+}
+
+
+
+.PhoneEmailPnl
+{
+	clear: both;
+	margin: 0 0 0 60px;
+	width: 280px;
+	height: 60px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 1800;
+	position: absolute;
+	background-color: #fff8c9;
+}
+.PhoneEmail_iframe
+{
+	margin: 0 0 0 60px;
+	width: 280px;
+	height: 60px;
+	text-align: center;
+	padding: 0;
+	border: solid 1px red;
+	z-index: 1799;
+	position: absolute;
+	background-color: #fff8c9;
+}
+
+
+/* Vendor Quick ascx */
+.vendorquickpnl
+{
+	clear: both;
+	margin: 0 0 0 0;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 300;
+	position: absolute;
+	background-color: #fff8c9;
+}
+.vendorquick_iframe
+{
+	margin: 0 0 0 0;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	padding: 0;
+	border: solid 1px red;
+	z-index: 299;
+	position: absolute;
+	background-color: #fff8c9;
+}
+
+
+/* Zip code ascx */
+.ZipCodePnl
+{
+	clear: both;
+	margin: 0 0 0 -150px;
+	width: 280px;
+	height: 200px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 300;
+	position: absolute;
+	background-color: #fff8c9;
+}
+.ZipCode_iframe
+{
+	margin: 0 0 0 -150px;
+	width: 280px;
+	height: 200px;
+	text-align: center;
+	padding: 0;
+	border: solid 1px red;
+	z-index: 299;
+	position: absolute;
+	background-color: #fff8c9;
+}
+
+
+/* add Group name */
+.GroupName_iframe
+{
+	margin: 0 0 0 -150px;
+	width: 165px;
+	height: 50px;
+	text-align: center;
+	padding: 0;
+	z-index: 299;
+	position: absolute;
+}
+.GroupNamePnl
+{
+	clear: both;
+	margin: 0 0 0 -150px;
+	width: 165px;
+	height: 50px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 300;
+	position: absolute;
+	background-color: #fff8c9;
+}
+
+/* CurrencySelect*/
+.CurrencyPnl
+{
+	clear: both;
+	margin: 0 0 0 0;
+	height:300px;
+	width: 280px;
+	text-align: center;
+	padding: 0;
+	border: solid 4px #eeeeee;
+	z-index: 300;
+	position: absolute;
+	background-color: #fff8c9;
+}
+.Currency_iframe1
+{
+	margin: 0 0 0 0;
+	width: 280px;
+	height:300px;
+	text-align: center;
+	padding: 0;
+	border: solid 1px red;
+	z-index: 299;
+	position: absolute;
+	background-color: #fff8c9;
+}

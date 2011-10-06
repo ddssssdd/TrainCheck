@@ -1,0 +1,15 @@
+D:\Programs\20100518\TrainCheck\bin\Release\dbtraincheck.sdf
+D:\Programs\20100518\TrainCheck\bin\Release\Scanner.dll
+D:\Programs\20100518\TrainCheck\bin\Release\TrainCheck.exe
+D:\Programs\20100518\TrainCheck\bin\Release\TrainCheck.pdb
+D:\Programs\20100518\TrainCheck\obj\Release\ResolveAssemblyReference.cache
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormCheck.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormDataQuery.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormJobMainView.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormLogin.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormMain.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.FormSpecsEdit.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.Properties.Resources.resources
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.csproj.GenerateResource.Cache
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.exe
+D:\Programs\20100518\TrainCheck\obj\Release\TrainCheck.pdb
