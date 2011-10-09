@@ -4,6 +4,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+   <table width="1024px">
+        <tr>
+            <td align="right">
+                <a href="javascript:history.go(-1);">[返回]</a>
+            </td>
+        </tr>
+    </table>
     <asp:GridView ID="grdDetails" runat="server" AllowSorting="True" AutoGenerateColumns="False"
         OnSorting="grdDetails_Sorting" OnRowDataBound="grdDetails_RowDataBound">
         <Columns>

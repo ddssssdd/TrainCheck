@@ -3,7 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
+<table width=800px">
+        <tr>
+            <td align="right">
+                <a href="javascript:history.go(-1);">[返回]</a>
+            </td>
+        </tr>
+    </table>
     <asp:Panel ID="panDetail" runat="server" SkinID="PanelEdit">
     <table>
         <tr>

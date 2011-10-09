@@ -62,6 +62,7 @@ public partial class Specs_DictSpecsEdit : System.Web.UI.Page
               
             }
             BindGrid();
+            
         }
       
 

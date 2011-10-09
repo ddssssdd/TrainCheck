@@ -2,8 +2,17 @@
     CodeFile="DictSpecsEdit.aspx.cs" Inherits="Specs_DictSpecsEdit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    
+    <table width=800px">
+        <tr>
+            <td align="right">
+                <a href="javascript:history.go(-1);">[返回]</a>
+            </td>
+        </tr>
+    </table>
     <asp:Panel ID="panDetail" runat="server" SkinID="PanelEdit">
         <table width="800px">
             <tr>
@@ -187,5 +196,6 @@
             SkinID="btnshort" />&nbsp
         <asp:Button ID="btnCancel" runat="server" Text="取消" CommandName="cancel" OnCommand="btnDetail_Command"
             SkinID="btnshort" />&nbsp
+        <asp:button ID="btnBack" runat="server" Text="返回"/>
     </asp:Panel>
 </asp:Content>

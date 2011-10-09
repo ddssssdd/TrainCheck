@@ -18,7 +18,7 @@ public class AppHelper
             if (_CheckPositionList == null)
             {
                 _CheckPositionList = new List<string>();
-                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "CheckPosition"), _CheckPositionList);
+                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "CheckPosition2"), _CheckPositionList);
                 
             }
             return _CheckPositionList;
@@ -32,7 +32,7 @@ public class AppHelper
             if (_CheckMethodList == null)
             {
                 _CheckMethodList = new List<string>();
-                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "CheckMethod"), _CheckMethodList);
+                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "CheckMethod2"), _CheckMethodList);
                 _CheckMethodList.Insert(0, "");
                 
             }
@@ -47,7 +47,7 @@ public class AppHelper
             if (_SectionList == null)
             {
                 _SectionList = new List<string>();
-                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "Section"), _SectionList);
+                FillListBySQLString(String.Format("select value from dicts where KeyName='{0}'", "Section2"), _SectionList);
                 
             }
             return _SectionList;
