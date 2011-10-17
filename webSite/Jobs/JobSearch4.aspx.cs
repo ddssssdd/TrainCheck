@@ -149,7 +149,7 @@ public partial class Jobs_JobSearch4 : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            BindData();
+            //BindData();
         }
     }
     #region GridView actions

@@ -61,7 +61,7 @@
                         SkinID="" />
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField SortExpression="FailurePosition" HeaderText="待检总数">
+            <asp:TemplateField SortExpression="FailurePosition" HeaderText="应检总数">
                 <ItemStyle Width="100px" />
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%# Bind("AreaNo") %>' ID="lblTrainCode" SkinID="" />
@@ -84,7 +84,7 @@
             </asp:Series>
             <asp:Series ChartArea="ChartArea1" IsValueShownAsLabel="True" Legend="Legend1" Name="通过总数">
             </asp:Series>
-            <asp:Series ChartArea="ChartArea1" IsValueShownAsLabel="True" Legend="Legend1" Name="待检总数">
+            <asp:Series ChartArea="ChartArea1" IsValueShownAsLabel="True" Legend="Legend1" Name="应检总数">
             </asp:Series>
         </Series>
         <ChartAreas>
@@ -92,6 +92,7 @@
                 <Area3DStyle Inclination="15" Rotation="45" /></asp:ChartArea>
         </ChartAreas>
     </asp:Chart>
+    <table Width="1024px"><tr><td align="center">接触网巡检图示</td></tr></table><br />
     <br />
 </asp:Content>
 

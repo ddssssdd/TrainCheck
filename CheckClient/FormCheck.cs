@@ -62,11 +62,12 @@ namespace TrainCheck
                 if (spec != null)
                 {
                     //first process last spec;
+                    /*
                     if ((CurrentJob.IsFull==false) && (spec.IsFull))
                     {
                         if (MessageBox.Show("此项检查是牵引变检查项目，是否继续检查?", "请确认", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.No)
                             return;
-                    }
+                    }*/
                     CurrentSpecs = spec;
                     InitView();
                 }

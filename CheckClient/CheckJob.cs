@@ -437,6 +437,7 @@ namespace TrainCheck
                 barcode = barcode.Substring(0, 6);  
               
             }
+            result = "";
             string sqlstring = String.Format("select * from lookup where code='{0}'", barcode);
             using (IDataReader dr = DataAccess.ExecuteReader(sqlstring))
             {
@@ -445,6 +446,9 @@ namespace TrainCheck
                     result = dr.GetString(1);
                 }
                 dr.Close();
+            }
+            if (result == "") {
+                result = "线路X车间X工区X";
             }
             if (is16)
             {

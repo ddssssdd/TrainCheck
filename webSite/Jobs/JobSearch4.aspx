@@ -1,12 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.master" AutoEventWireup="true" CodeFile="JobSearch4.aspx.cs" Inherits="Jobs_JobSearch4" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<script language="javascript">
+    J(function() {
+        J('#ctl00_ContentPlaceHolder1_txtJobDate_begin').calendar();
+        J('#ctl00_ContentPlaceHolder1_txtJobDate_end').calendar();
+        //J('#txtBegin').calendar();
+    });
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <table width="600px">
             <tr>
                 <td>
-                    <asp:Label ID="Label13" runat="server" Text="供电段" SkinID="field_title" />
+                    <asp:Label ID="Label13" runat="server" Text="线别" SkinID="field_title" />
                 </td>
                 <td>
                     <asp:DropDownList ID="ddlArea_Search" runat="server" Width="100px" 
@@ -22,7 +29,7 @@
                         onselectedindexchanged="ddlFactory_Search_SelectedIndexChanged" />
                 </td>
                 <td>
-                    <asp:Label ID="Label15" runat="server" Text="工区" SkinID="field_title" />
+                    <asp:Label ID="Label15" runat="server" Text="牵引变" SkinID="field_title" />
                 </td>
                 <td>
                     <asp:DropDownList ID="ddlSection_Search" runat="server" Width="100px" />
@@ -73,21 +80,7 @@
                 <asp:GridView ID="grdResult" runat="server" AllowSorting="True" AutoGenerateColumns="False"
                     OnSorting="grdResult_Sorting" OnSelectedIndexChanged="grdResult_SelectedIndexChanged">
                     <Columns>
-                       <asp:TemplateField SortExpression="CheckType" HeaderText="巡检类型">
-                            <ItemStyle Width="100px" />
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%# Bind("CheckType") %>' ID="lblCheckType" SkinID="" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                       
-                        <asp:TemplateField SortExpression="Name" HeaderText="巡检员">
-                            <ItemStyle Width="100px" />
-                            <ItemTemplate>
-                                <asp:Label runat="server" Text='<%# Bind("Name") %>' ID="lblName" SkinID="" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                       
-                        <asp:TemplateField SortExpression="Area" HeaderText="供电段">
+                        <asp:TemplateField SortExpression="Area" HeaderText="线别">
                             <ItemStyle Width="100px" />
                             <ItemTemplate>
                                 <asp:Label runat="server" Text='<%# Bind("Area") %>' ID="lblArea" SkinID="" />
@@ -99,18 +92,21 @@
                                 <asp:Label runat="server" Text='<%# Bind("Factory") %>' ID="lblFactory" SkinID="" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField SortExpression="Section" HeaderText="工区">
+                        <asp:TemplateField SortExpression="Section" HeaderText="牵引变">
                             <ItemStyle Width="100px" />
                             <ItemTemplate>
                                 <asp:Label runat="server" Text='<%# Bind("Section") %>' ID="lblSection" SkinID="" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField SortExpression="JobDate" HeaderText="检查日期">
+                       
+                        <asp:TemplateField SortExpression="Name" HeaderText="巡检员">
                             <ItemStyle Width="100px" />
                             <ItemTemplate>
-                                <asp:Label runat="server" Text='<%# Bind("JobDate") %>' ID="lblJobDate" SkinID="" />
+                                <asp:Label runat="server" Text='<%# Bind("Name") %>' ID="lblName" SkinID="" />
                             </ItemTemplate>
                         </asp:TemplateField>
+                       
+                       
                        
                         <asp:TemplateField SortExpression="BeginTime" HeaderText="开始时间">
                             <ItemStyle Width="100px" />
@@ -126,7 +122,13 @@
                                     SkinID="" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        
+                         <asp:TemplateField SortExpression="CheckPosition" HeaderText="应检总数">
+                            <ItemStyle Width="100px" />
+                            <ItemTemplate>
+                                <asp:Label runat="server" Text='<%# Bind("NeedCheckPosition") %>' ID="lblNo1"
+                                    SkinID="" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:TemplateField SortExpression="CheckPosition" HeaderText="检查点">
                             <ItemStyle Width="100px" />
                             <ItemTemplate>
@@ -148,7 +150,7 @@
                                 <asp:Label runat="server" Text='<%# Bind("FailurePosition") %>' ID="lblTrainCode" SkinID="" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                          <asp:TemplateField>
+                          <asp:TemplateField  HeaderText="故障">
                             <ItemTemplate>
                                 <asp:ImageButton ID="ImageButton2" runat="server" CommandArgument='<%# Bind("VW_JobMainID") %>'
                                     CommandName="Select" AlternateText="编辑" ImageUrl="~/images/editicon.gif" />
